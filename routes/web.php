@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Contollers\AdminCpntroller;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,3 +28,5 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+route :: get('/home', [AdminController::class, 'index']);
