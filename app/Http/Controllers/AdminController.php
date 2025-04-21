@@ -10,26 +10,22 @@ use Illuminate\Support\Facades\Auth;
 
 class AdminController extends Controller
 {
-    public function index() 
+    public function index()
     {
-        if(Auth::id())
-        {
-            $usertype = Auth() -> user() -> usertype; 
+        if (Auth::id()) {
+            $usertype = Auth()->user()->usertype;
 
-            if($usertype == 'user')
-            {
+            if ($usertype == 'user') {
                 return view('dashboard');
-            }
-
-            elseif($usertype == 'admin')
-            {
+            } elseif ($usertype == 'admin') {
                 return view('admin.index');
-            }
-
-            else
-            {
-                return redirect() -> back(); 
+            } else {
+                return redirect()->back();
             }
         }
+    }
+
+    public function home() {
+        return view('home.index');
     }
 }
