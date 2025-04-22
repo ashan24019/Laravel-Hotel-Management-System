@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    @include('admin.css')
 </head>
+
 <body>
-    <h1>Admin Home</h1>
+    @include('admin.header')
+
+    <!-- Sidebar Navigation-->
+    @include('admin.sidebar')
+    <!-- Body section-->
+    @include('admin.body')
+    <!-- foter section -->
+    @include('admin.footer')
 </body>
+
 </html>
