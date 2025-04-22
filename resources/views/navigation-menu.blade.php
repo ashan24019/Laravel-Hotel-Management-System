@@ -75,10 +75,6 @@
                         </x-slot>
 
                         <x-slot name="content">
-                            <!-- Account Management -->
-                            <div class="block px-4 py-2 text-xs text-gray-400">
-                                {{ __('Manage Account') }}
-                            </div>
 
                             <x-dropdown-link href="{{ route('profile.show') }}">
                                 {{ __('Profile') }}
@@ -89,9 +85,7 @@
                                     {{ __('API Tokens') }}
                                 </x-dropdown-link>
                             @endif
-
-                            <div class="border-t border-gray-200"></div>
-
+                            
                             <!-- Authentication -->
                             <form method="POST" action="{{ route('logout') }}" x-data>
                                 @csrf
