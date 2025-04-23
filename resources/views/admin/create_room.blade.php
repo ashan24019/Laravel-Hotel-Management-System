@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    @include('admin.css')
+</head>
+
+<body>
+    @include('admin.header')
+
+    <!-- Sidebar Navigation-->
+    @include('admin.sidebar')
+    <!-- foter section -->
+    @include('admin.footer')
+</body>
+
+</html>
